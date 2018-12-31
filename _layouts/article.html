@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="article">
+    <aside class="articleAside">
+        {% for section in site.data.articleAside %}
+        <section class="articleAsideSection">
+            <h1 class="articleAsideTitle">{{section.title}}</h1>
+            <ul>
+                {% for article in section.articles %}
+                <li><a class="articleAsideLink" href="{{article.link}}">{{article.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endfor %}
+    </aside>
+
+    <main class="main">
+        {{content}}
+    </main>
+</div>

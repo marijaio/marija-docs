@@ -1,0 +1,13 @@
+.navigationItem {
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 20px;
+
+  &.active {
+    background: white;
+    color: black;
+  }
+}

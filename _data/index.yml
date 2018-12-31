@@ -1,0 +1,30 @@
+- title: Installation & config
+  articles:
+    - title: Installation
+      link: /installation
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+    - title: Adding a datasource
+      link: wat
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+    - title: User management
+      link: wat
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+- title: Usage
+  articles:
+  - title: How to use Marija
+    link: wat
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+  - title: Interface walkthrough
+    link: wat
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+- title: Case studies
+  articles:
+  - title: Hello Peppa
+    link: wat
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+  - title: Scientific papers
+    link: wat
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+  - title: Financial data
+    link: wat
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.

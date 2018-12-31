@@ -2,4 +2,30 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<h1 class="indexTitle">Getting started</h1>
+<div class="indexSubtitle">
+    <p class="gettingStartedOption">
+        Are you using the <a href="#">online demo</a>?
+        Learn how to <a class="primaryButton" href="#">use Marija</a>
+    </p>
+    <p class="gettingStartedOption">
+        Or would you like to install Marija on your own computer?
+        Learn how to <a class="primaryButton" href="#">install Marija</a>
+    </p>
+</div>
+
+{% for section in site.data.index %}
+<section class="indexSection">
+    <h1 class="indexSectionTitle">{{ section.title }}</h1>
+    <ul class="indexList">
+        {% for article in section.articles %}
+        <li class="indexArticle">
+            <h2 class="indexArticleTitle">
+                <a class="indexArticleLink" href="{{article.link}}">{{article.title}}</a>
+            </h2>
+            <p class="indexArticleDescription">{{article.description}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endfor %}

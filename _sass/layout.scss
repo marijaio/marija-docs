@@ -1,0 +1,49 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.marijaLogo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.marijaText {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.header {
+  padding: 20px 0;
+  background: #4C657F;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.marijaHeading {
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+}
+
+.articleAside {
+  width: 220px;
+  background: #eee;
+  border: #ddd;
+  border-radius: 3px;
+  padding: 1em;
+  margin-right: 2em;
+}
+
+.articleAsideSection {
+  margin-bottom: 1em;
+}

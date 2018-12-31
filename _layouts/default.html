@@ -6,8 +6,20 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-{% include navigation.html %}
 
-{{ content }}
+<header class="header">
+    <div class="container headerContainer">
+        <h1 class="marijaHeading">
+            <img src="/assets/images/marija.png" class="marijaLogo" />
+            <span class="marijaText">Marija</span>
+        </h1>
+        {% include navigation.html %}
+    </div>
+</header>
+
+<div class="container">
+    {{ content }}
+</div>
+
 </body>
 </html>
