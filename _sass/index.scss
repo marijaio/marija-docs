@@ -23,13 +23,20 @@
 }
 
 .indexList {
-  display: flex;
-  margin: 0 -20px;
+  @include respondTo(medium) {
+    display: flex;
+    margin: 0 -20px;
+  }
 }
 
 .indexArticle {
-  width: 33.33%;
-  padding: 0 20px;
+  margin-bottom: 1em;
+
+  @include respondTo(medium) {
+    width: 33.33%;
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
 }
 
 .indexArticleTitle {

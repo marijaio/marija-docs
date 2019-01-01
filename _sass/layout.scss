@@ -1,6 +1,10 @@
 .container {
-  width: 960px;
-  margin: 0 auto;
+  margin: 0 10px;
+
+  @include respondTo(medium) {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .marijaLogo {
@@ -32,19 +36,26 @@
 }
 
 .article {
-  display: flex;
   margin-bottom: 2em;
-  align-items: start;
+
+  @include respondTo(medium) {
+    display: flex;
+    align-items: start;
+  }
 }
 
 .articleAside {
-  width: 250px;
   background: #eee;
   border: #ddd;
   border-radius: 3px;
   padding: 1em;
-  margin-right: 2em;
-  flex-shrink: 0;
+  margin-bottom: 2em;
+
+  @include respondTo(medium) {
+    margin-right: 2em;
+    width: 250px;
+    flex-shrink: 0;
+  }
 }
 
 .articleAsideSection {
