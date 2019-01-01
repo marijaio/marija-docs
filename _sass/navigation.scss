@@ -1,10 +1,15 @@
 .navigationItem {
-  margin-left: 40px;
+  margin-left: 10px;
   text-decoration: none;
   color: white;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 5px 10px;
   border-radius: 20px;
+
+  @include respondTo(medium) {
+    margin-left: 40px;
+    padding: 5px 20px;
+  }
 
   &.active {
     background: white;
