@@ -1,4 +1,17 @@
 .articleContent {
+  position: relative;
+
+  .editArticle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #eee;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+
   h1 {
     font-size: 3em;
     margin-bottom: .33em;

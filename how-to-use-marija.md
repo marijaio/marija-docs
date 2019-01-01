@@ -1,6 +1,7 @@
 ---
 layout: article
 title: How to use Marija
+filename: how-to-use-marija.md
 ---
 
 # How to use Marija
