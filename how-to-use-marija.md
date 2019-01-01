@@ -4,6 +4,7 @@ title: How to use Marija
 ---
 
 # How to use Marija
+
 Marija is a data visualisation tool. It visualises the data through network graphs,
 a map and a timeline. It can help you find meaningful relationships in large amounts of data.
 
@@ -12,6 +13,7 @@ a small CSV containing some emails. We will try to find out who is sending the
 most emails and which people are often communicating with each other.
 
 ## Getting our CSV
+
 You can download the CSV from [docs.marija.io/assets/resources/emails.csv](/assets/resources/emails.csv).
 
 Let's take a quick look at our CSV:
@@ -27,4 +29,14 @@ subject and body. The subjects and bodies are automatically generated random tex
 
 First click on `Config`, then scroll down until you see `CSV Datasources`.
 Then click on `Create CSV datasource`.
+
 ![Create CSV datasource](/assets/images/create-csv-datasource.png)
+
+Follow the steps in the CSV datasource wizard to create the emails.csv datasource.
+You should now see emails.csv listed under CSV datasources.
+
+## Displaying our first graph
+
+Click on `Show all items` to display all emails as a network graph.
+
+{% include loopingVideo.html src="/assets/videos/first-graph.mp4" %}
