@@ -4,8 +4,6 @@ title: How to use Marija
 filename: how-to-use-marija.md
 ---
 
-# How to use Marija
-
 Marija is a data visualisation tool. It visualises the data through network graphs,
 a map and a timeline. It can help you find meaningful relationships in large amounts of data.
 
