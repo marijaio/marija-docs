@@ -4,10 +4,10 @@
       link: /installation
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
     - title: Adding a datasource
-      link: wat
+      link: #
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
     - title: User management
-      link: wat
+      link: #
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
 - title: Usage
   articles:
@@ -15,16 +15,16 @@
     link: /how-to-use-marija
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
   - title: Interface walkthrough
-    link: wat
+    link: #
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
 - title: Case studies
   articles:
   - title: Hello Peppa
-    link: wat
+    link: #
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
   - title: Scientific papers
-    link: wat
+    link: #
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
   - title: Financial data
-    link: wat
+    link: #
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
