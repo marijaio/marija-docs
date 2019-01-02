@@ -16,8 +16,9 @@ layout: default
     </aside>
 
     <main class="articleContent">
-        <a class="editArticle" href="https://github.com/marijaio/marija-docs/edit/master/{{ page.filename }}">Improve this page</a>
+        <a class="editArticle" href="https://github.com/marijaio/marija-docs/edit/master{{ page.dir }}{{ page.path }}">Improve this page</a>
         <h1>{{ page.title }}</h1>
+        <p class="lastUpdated">Last updated on {{ page.git.last_commit.commit_date }}</p>
 
         {{content}}
     </main>
