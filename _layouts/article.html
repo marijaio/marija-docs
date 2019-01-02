@@ -8,7 +8,7 @@ layout: default
             <h1 class="articleAsideTitle">{{section.title}}</h1>
             <ul>
                 {% for article in section.articles %}
-                <li><a class="articleAsideLink" href="{{article.link}}">{{article.title}}</a></li>
+                <li><a class="articleAsideLink" href="{{ site.url }}{{article.link}}">{{article.title}}</a></li>
                 {% endfor %}
             </ul>
         </section>

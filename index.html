@@ -5,11 +5,11 @@ layout: default
 <div class="indexSubtitle">
     <p class="gettingStartedOption">
         Are you using the <a href="https://demo.marija.io">online demo</a>?
-        Learn how to <a class="primaryButton" href="/how-to-use-marija.html">use Marija</a>
+        Learn how to <a class="primaryButton" href="{{ site.url }}/how-to-use-marija.html">use Marija</a>
     </p>
     <p class="gettingStartedOption">
         Or would you like to install Marija on your own computer?
-        Learn how to <a class="primaryButton" href="/installation.html">install Marija</a>
+        Learn how to <a class="primaryButton" href="{{ site.url }}/installation.html">install Marija</a>
     </p>
 </div>
 
@@ -20,7 +20,7 @@ layout: default
         {% for article in section.articles %}
         <li class="indexArticle">
             <h2 class="indexArticleTitle">
-                <a class="indexArticleLink" href="{{article.link}}">{{article.title}}</a>
+                <a class="indexArticleLink" href="{{ site.url }}{{ article.link}}">{{article.title}}</a>
             </h2>
             <p class="indexArticleDescription">{{article.description}}</p>
         </li>

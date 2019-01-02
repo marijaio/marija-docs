@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} &dash; {% endif %}Marija docs</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+    <link rel="icon" href="{{ site.url }}/assets/images/favicon.png">
+    <base href="{{ site.url }}">
 </head>
 <body>
 

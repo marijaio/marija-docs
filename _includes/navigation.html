@@ -1,7 +1,4 @@
 <nav class="navigation">
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" class="navigationItem {% if item.name == 'Documentation' %}active{% endif %}">
-        {{ item.name }}
-    </a>
-    {% endfor %}
+    <a href="https://marija.io" class="navigationItem">Home</a>
+    <a href="{{ site.url }}" class="navigationItem active">Documentation</a>
 </nav>
