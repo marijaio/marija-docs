@@ -40,6 +40,11 @@
     margin: 1em 0 .5em;
   }
 
+  h3 {
+    font-size: 1.5em;
+    margin: 1.33em 0 .66em;
+  }
+
   p {
     margin-bottom: 1em;
   }
@@ -61,12 +66,27 @@
     }
   }
 
-  code {
+  code.highlighter-rouge,
+  div.highlighter-rouge {
     background: #eee;
     border: 1px solid #ddd;
     border-radius: 3px;
-    white-space: nowrap;
+    font-family: monospace;
+    font-size: .9em;
+  }
+
+  code.highlighter-rouge {
     padding: 0 3px;
+  }
+
+  div.highlighter-rouge {
+    padding: .5em;
+    margin-bottom: 1em;
+
+    pre {
+      white-space: pre-wrap;
+      max-width: 100%;
+    }
   }
 
   video {
@@ -80,6 +100,11 @@
 
   ul {
     list-style: disc inside;
+    margin-bottom: 1em;
+  }
+
+  ol {
+    list-style: decimal inside;
     margin-bottom: 1em;
   }
 }
