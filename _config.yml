@@ -1,2 +1,3 @@
 gems:
   - jekyll-git_metadata
+future: true
