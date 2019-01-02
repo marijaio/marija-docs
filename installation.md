@@ -6,6 +6,8 @@ title: Installation
 Installing Marija locally gives you more flexibility. You will be able to define
 your own datasources.
 
+Alternatively you can try out an online demo on [demo.marija.io](https://demo.marija.io).
+
 ## Step 1: Installation
 
 There are 3 ways to install Marija:
