@@ -1,7 +1,6 @@
 ---
 layout: article
 title: How to use Marija
-filename: how-to-use-marija.md
 ---
 
 Marija is a data visualisation tool. It visualises data through network graphs,

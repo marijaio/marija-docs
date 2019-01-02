@@ -1,0 +1,30 @@
+- title: Installation & config
+  articles:
+  - title: Installation
+    link: /installation.html
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+  - title: Adding a datasource
+    link: #
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+  - title: User management
+    link: #
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+- title: Usage
+  articles:
+  - title: How to use Marija
+    link: /how-to-use-marija.html
+    description: An introduction to Marija. Learn to understand the graph and various windows in the interface.
+  - title: Connectors
+    link: #
+    description: Making new connectors, combining multiple fields and using similarity matching.
+- title: Case studies
+  articles:
+  - title: Hello Peppa
+    link: #
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+  - title: Scientific papers
+    link: #
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+  - title: Financial data
+    link: #
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
