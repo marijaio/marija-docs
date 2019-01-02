@@ -1,7 +1,7 @@
 - title: Installation & config
   articles:
   - title: Installation
-    link: #
+    link: /installation.html
   - title: Adding a datasource
     link: #
   - title: User management
@@ -9,7 +9,7 @@
 - title: Usage
   articles:
   - title: How to use Marija
-    link: /how-to-use-marija
+    link: /how-to-use-marija.html
   - title: Interface walkthrough
     link: #
 - title: Case studies

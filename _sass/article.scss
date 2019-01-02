@@ -1,17 +1,34 @@
-.articleContent {
-  position: relative;
+.articleMain {
   flex-grow: 1;
+}
+
+.articleHeader {
+  margin-bottom: 2em;
+
+  @include respondTo(medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .articleTitle {
+    font-size: 3em;
+  }
+
+  .lastUpdated {
+    color: #999;
+  }
 
   .editArticle {
-    position: absolute;
-    top: 0;
-    right: 0;
     background: #eee;
     color: black;
     padding: 5px 15px;
     border-radius: 20px;
     text-decoration: none;
   }
+}
+
+.articleContent {
 
   h1 {
     font-size: 3em;
