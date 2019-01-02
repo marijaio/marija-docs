@@ -2,9 +2,9 @@
   articles:
   - title: Installation
     link: /installation.html
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
-  - title: Adding a datasource
-    link: #
+    description: Learn how to install Marija locally. This is required for defining your own datasources.
+  - title: Adding datasources
+    link: /adding-datasources.html
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
   - title: User management
     link: #
