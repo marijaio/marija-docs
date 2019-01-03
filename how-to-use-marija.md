@@ -83,6 +83,7 @@ Now our graph looks much better.
 To clean up our graph further, we can delete nodes that do not seem interesting.
 There is one node on the right that is not connected to any other nodes.
 Click on it to select it and then press the `Delete` button in the bottom toolbar.
+**Note: Marija does not alter the underlying data! You only delete items from the visualised graph, not in your original dataset.**
 
 Hover on the `to, from` connector in the legend
 in the top left to highlight the connectors. This gives us a clear overview of
@@ -106,7 +107,7 @@ interesting one, since this is the email linking both networks together.
 
 Now deselect the node by clicking on empty space anywhere in the graph. Open the
 `Table` and click on `Select all nodes`. You will now see the table display all
-nodes. `Subject` is currently only column. We can add more columns by opening
+nodes. `Subject` is currently the only selected column. We can add more columns by opening
 the data of a node, and clicking on the plus icon.
 
 {% include loopingVideo.html src="/assets/articles/how-to-use-marija/table-columns.mp4" %}
@@ -141,8 +142,8 @@ We learned how to use some basic features of Marija:
 * Importing a CSV.
 * The difference between objects (circles) and connectors (squares).
 * Defining connectors manually.
-* Inspecting our data with the `Table` and `Values`.
-* Getting insights into the chronology of events with the `Timeline`.
+* Inspecting our data with the `Table` and `Values` windows.
+* Getting insights into the chronology of events with the `Timeline` window.
 
 Marija is a powerful tool that can you help you find relations in your data
 quickly. We demonstrated how data can be imported into Marija without needing
