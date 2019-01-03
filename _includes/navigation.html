@@ -1,4 +1,4 @@
 <nav class="navigation">
     <a href="https://marija.io" class="navigationItem">Home</a>
-    <a href="{{ site.baseurl }}" class="navigationItem active">Documentation</a>
+    <a href="{% if site.baseurl %}{{ site.baseurl }}{% else %}/{% endif %}" class="navigationItem active">Documentation</a>
 </nav>
