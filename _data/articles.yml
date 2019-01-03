@@ -1,3 +1,14 @@
+- title: Usage
+  articles:
+  - title: How to use Marija
+    link: /how-to-use-marija.html
+    description: An introduction to Marija. Learn to understand the graph and various windows in the interface.
+  - title: Connectors
+    link: /connectors.html
+    description: Making new connectors, combining multiple fields and using similarity matching.
+  - title: Search
+    link: /search.html
+    description: How to use advanced search and a cheatsheet for special search syntax.
 - title: Installation & config
   articles:
   - title: Installation
@@ -5,26 +16,9 @@
     description: Learn how to install Marija locally. This is required for defining your own datasources.
   - title: Adding datasources
     link: /adding-datasources.html
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
-  - title: User management
-    link: #
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
-- title: Usage
-  articles:
-  - title: How to use Marija
-    link: /how-to-use-marija.html
-    description: An introduction to Marija. Learn to understand the graph and various windows in the interface.
-  - title: Connectors
-    link: #
-    description: Making new connectors, combining multiple fields and using similarity matching.
+    description: Datasources are sources that Marija can search. Learn how to add several types of datasources.
 - title: Case studies
   articles:
   - title: Hello Peppa
-    link: #
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
-  - title: Scientific papers
-    link: #
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
-  - title: Financial data
-    link: #
+    link: /hello-peppa.html
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
