@@ -21,15 +21,6 @@
     margin-bottom: 0 !important;
   }
 
-  .lastUpdated {
-    color: #999;
-    margin-bottom: .5em;
-
-    @include respondTo(medium) {
-      margin-bottom: 0;
-    }
-  }
-
   .editArticle {
     background: #eee;
     color: black;
