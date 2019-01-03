@@ -5,6 +5,11 @@ layout: default
     <main class="articleMain">
         <header class="articleHeader">
             <div class="articleHeaderLeft">
+                <p class="breadcrumbs">
+                    <a href="{% if site.baseurl == null %}/{% else %}{{ site.baseurl }}{% endif %}">Documentation</a>
+                    &gt;
+                    {{ page.title }}
+                </p>
                 <h1 class="articleTitle">{{ page.title }}</h1>
                 <p class="lastUpdated">Last updated on {{ page.git.last_commit.commit_date }}</p>
             </div>

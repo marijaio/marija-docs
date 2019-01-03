@@ -11,6 +11,10 @@
     align-items: start;
   }
 
+  .breadcrumbs {
+    margin-bottom: 1em;
+  }
+
   .articleTitle {
     @include h1();
     margin-bottom: 0 !important;
