@@ -67,3 +67,11 @@
 .articleAsideSection {
   margin-bottom: 1em;
 }
+
+.articleAsideTitle {
+  @include h1();
+
+  @include respondTo(medium) {
+    display: none;
+  }
+}

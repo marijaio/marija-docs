@@ -17,9 +17,11 @@ layout: default
     </main>
 
     <aside class="articleAside">
+        <h1 class="articleAsideTitle">More articles</h1>
+
         {% for section in site.data.articles %}
         <section class="articleAsideSection">
-            <h1 class="articleAsideTitle">{{section.title}}</h1>
+            <h2>{{section.title}}</h2>
             <ul>
                 {% for article in section.articles %}
                 <li><a class="articleAsideLink" href="{{ site.baseurl }}{{article.link}}">{{article.title}}</a></li>
