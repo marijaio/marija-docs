@@ -17,7 +17,7 @@ There are 3 ways to install Marija:
 
 ### Option 1: Using Docker
 
-To install Marija we will use Docker. Docker is a platform to run applications
+Docker is a platform to run applications
 withing containers. If you have never used Docker before, check out the
 [guide on docker.com](https://docs.docker.com/get-started/).
 

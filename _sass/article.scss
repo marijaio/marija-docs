@@ -12,7 +12,8 @@
   }
 
   .articleTitle {
-    font-size: 3em;
+    @include h1();
+    margin-bottom: 0;
   }
 
   .lastUpdated {
@@ -29,20 +30,16 @@
 }
 
 .articleContent {
-
   h1 {
-    font-size: 3em;
-    margin-bottom: .33em;
+    @include h1();
   }
 
   h2 {
-    font-size: 2em;
-    margin: 1em 0 .5em;
+    @include h2();
   }
 
   h3 {
-    font-size: 1.5em;
-    margin: 1.33em 0 .66em;
+    @include h3();
   }
 
   p {
@@ -77,6 +74,8 @@
 
   code.highlighter-rouge {
     padding: 0 3px;
+    white-space: pre-wrap;
+    word-break: break-word;
   }
 
   div.highlighter-rouge {
@@ -85,6 +84,7 @@
 
     pre {
       white-space: pre-wrap;
+      word-break: break-word;
       max-width: 100%;
     }
   }

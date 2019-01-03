@@ -46,6 +46,7 @@
   @include respondTo(medium) {
     display: flex;
     align-items: start;
+    flex-direction: row-reverse;
   }
 }
 

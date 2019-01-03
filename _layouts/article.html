@@ -2,19 +2,6 @@
 layout: default
 ---
 <div class="article">
-    <aside class="articleAside">
-        {% for section in site.data.articles %}
-        <section class="articleAsideSection">
-            <h1 class="articleAsideTitle">{{section.title}}</h1>
-            <ul>
-                {% for article in section.articles %}
-                <li><a class="articleAsideLink" href="{{ site.baseurl }}{{article.link}}">{{article.title}}</a></li>
-                {% endfor %}
-            </ul>
-        </section>
-        {% endfor %}
-    </aside>
-
     <main class="articleMain">
         <header class="articleHeader">
             <div class="articleHeaderLeft">
@@ -28,4 +15,17 @@ layout: default
             {{content}}
         </div>
     </main>
+
+    <aside class="articleAside">
+        {% for section in site.data.articles %}
+        <section class="articleAsideSection">
+            <h1 class="articleAsideTitle">{{section.title}}</h1>
+            <ul>
+                {% for article in section.articles %}
+                <li><a class="articleAsideLink" href="{{ site.baseurl }}{{article.link}}">{{article.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endfor %}
+    </aside>
 </div>
