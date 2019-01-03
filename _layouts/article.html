@@ -6,6 +6,8 @@ layout: default
         <header class="articleHeader">
             <div class="articleHeaderLeft">
                 <p class="breadcrumbs">
+                    <!-- {{ site.baseurl | jsonify }} -->
+
                     <a href="{% if site.baseurl == null %}/{% else %}{{ site.baseurl }}{% endif %}">Documentation</a>
                     &gt;
                     {{ page.title }}
