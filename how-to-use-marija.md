@@ -83,7 +83,7 @@ Now our graph looks much better.
 To clean up our graph further, we can delete nodes that do not seem interesting.
 There is one node on the right that is not connected to any other nodes.
 Click on it to select it and then press the `Delete` button in the bottom toolbar.
-**Note: Marija does not alter the underlying data! You only delete items from the visualised graph, not in your original dataset.**
+>Note: Marija does not alter the underlying data! You only delete items from the visualised graph, not in your original dataset.
 
 Hover on the `to, from` connector in the legend
 in the top left to highlight the connectors. This gives us a clear overview of
