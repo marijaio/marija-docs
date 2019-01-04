@@ -36,7 +36,7 @@ Verify that ElasticSearch is working by visiting [localhost:9200](http://localho
 ## Populating ElasticSearch with movie recommendations
 
 We will be using the data from the [ElasticSearch examples repo](https://github.com/elastic/examples/tree/master/Graph/movie_recommendations).
-The used files have been modified to make them work with the latest version of ElasticSearch.
+The used files have been modified to make them work with a more recent version of ElasticSearch.
 
 Download the required files:
 ```
