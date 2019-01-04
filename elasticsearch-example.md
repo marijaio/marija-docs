@@ -39,7 +39,7 @@ We will be using the data from the [ElasticSearch examples repo](https://github.
 
 Download the required files:
 ```
-$ curl -O https://raw.githubusercontent.com/elastic/examples/master/Graph/movie_recommendations/download_data.py -O https://raw.githubusercontent.com/elastic/examples/master/Graph/movie_recommendations/index_users.py -O https://raw.githubusercontent.com/elastic/examples/master/Graph/movie_recommendations/movie_lens.json -O https://raw.githubusercontent.com/elastic/examples/master/Graph/movie_recommendations/requirements.txt
+$ curl -O https://docs.marija.io/assets/articles/elasticsearch-example/download_data.py -O https://docs.marija.io/assets/articles/elasticsearch-example/index_users.py -O https://docs.marija.io/assets/articles/elasticsearch-example/movie_lens.json -O https://docs.marija.io/assets/articles/elasticsearch-example/requirements.txt
 ```
 
 Install the Python dependencies:
