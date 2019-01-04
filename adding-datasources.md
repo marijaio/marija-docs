@@ -62,8 +62,8 @@ api-secret=""
 [datasource.honeytrap]
 type="elasticsearch"
 url="http://51.15.37.73:9200/honeytrap-nos"
-username=elastic
-password=changeme
+username="elastic"
+password="changeme"
 
 [datasource.flow]
 type="elasticsearch"
