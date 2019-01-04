@@ -97,4 +97,4 @@ your newly added datasources.
 ## Further reading
 
 If you need more help with the installation of Marija, check out the
-[Installation guide](/installation.html).
+[installation guide](/installation.html).
