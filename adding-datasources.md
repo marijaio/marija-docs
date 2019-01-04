@@ -10,7 +10,83 @@ The following types are supported:
 * ElasticSearch
 * Splunk
 * Twitter
+* Blockchain
+* Censys
 
-In this article we will learn how to configure these datasources.
+To add a datasource, you need to configure it in your `config.toml`.
 
-## ElasticSearch
+### ElasticSearch
+```
+[datasource.emails]
+type="elasticsearch"
+url="http://172.17.0.1:9200/emails"
+username="elastic" # Optional
+password="changeme" # Optional
+```
+
+### Splunk
+todo
+
+### Twitter
+```
+[datasource.twitter]
+type="twitter"
+consumer_key=""
+consumer_secret=""
+token=""
+token_secret=""
+```
+
+### Blockchain
+```
+[datasource.blockchain]
+type="blockchain"
+```
+
+### Censys
+todo
+
+## Complete `config.toml` example
+```
+[datasource]
+
+[datasource.spamtrap]
+type="elasticsearch"
+url="http://51.15.37.73:9200/spamtrap"
+
+[datasource.censys]
+type="censys"
+api-id=""
+api-secret=""
+
+[datasource.honeytrap]
+type="elasticsearch"
+url="http://51.15.37.73:9200/honeytrap-nos"
+username=elastic
+password=changeme
+
+[datasource.flow]
+type="elasticsearch"
+url="http://127.0.0.1:9209/flow"
+
+[datasource.twitter]
+type="twitter"
+consumer_key=""
+consumer_secret=""
+token=""
+token_secret=""
+
+[datasource.blockchain]
+type="blockchain"
+
+[[logging]]
+output = "stdout"
+level = "debug"
+```
+
+## Running Marija
+
+To run Marija with your `config.toml` use the following command:
+```
+docker run -d -p 8080:8080 -v $(pwd)/config.toml:/config/config.toml marija/marija
+```
