@@ -19,7 +19,7 @@
     description: Datasources are sources that Marija can search. Learn how to add several types of datasources.
   - title: ElasticSearch example
     link: /elasticsearch-example.html
-    description: Learn to set up both Marija and ElasticSearch with Docker and work with a sample dataset.
+    description: Set up both Marija and ElasticSearch with Docker and work with a sample dataset.
 - title: Case studies
   articles:
   - title: Hello Peppa
