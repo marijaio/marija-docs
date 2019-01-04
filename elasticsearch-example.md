@@ -27,7 +27,7 @@ $ docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.4
 
 Now start ElasticSearch:
 ```
-$ docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.4
+$ docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.4
 ```
 > This creates and runs a temporary ElasticSearch database. The data stored in it will not be persistent and deleted when it is stopped.
 
@@ -36,6 +36,7 @@ Verify that ElasticSearch is working by visiting [localhost:9200](http://localho
 ## Populating ElasticSearch with movie recommendations
 
 We will be using the data from the [ElasticSearch examples repo](https://github.com/elastic/examples/tree/master/Graph/movie_recommendations).
+The used files have been modified to make them work with the latest version of ElasticSearch.
 
 Download the required files:
 ```
