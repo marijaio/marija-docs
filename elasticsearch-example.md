@@ -10,7 +10,7 @@ In this article we will:
 * Configure Marija to connect with ElasticSearch, using it as a datasource.
 
 Prerequisites:
-* Docker. For more info see this [guide on docker.com](https://docs.docker.com/get-started/).
+* Docker. For more info on how to install see [docker.com](https://docs.docker.com/install/).
 * Python3.
 
 ## Installing Marija
@@ -29,6 +29,9 @@ Now start ElasticSearch:
 ```
 $ docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.4
 ```
+> This creates and runs a temporary ElasticSearch database. The data stored in it will not be persistent and deleted when it is stopped.
+
+Verify that ElasticSearch is working by visiting [localhost:9200](http://localhost:9200) in your browser.
 
 ## Populating ElasticSearch with movie recommendations
 
