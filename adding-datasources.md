@@ -90,3 +90,11 @@ To run Marija with your `config.toml` use the following command:
 ```
 docker run -d -p 8080:8080 -v $(pwd)/config.toml:/config/config.toml marija/marija
 ```
+
+Now you can visit Marija on `localhost:8080` and you should be able to search
+your newly added datasources.
+
+## Further reading
+
+If you need more help with the installation of Marija, check out the
+[Installation guide](/installation.html).
