@@ -54,7 +54,7 @@ Store the data in your ElasticSearch instance:
 python3 index_users.py
 ```
 
-To see if it worked, open your browser and go to
+To see if it worked, go to
 [localhost:9200/movie_lens_users/_count](http://localhost:9200/movie_lens_users/_count).
 You should see a count of 138493.
 
