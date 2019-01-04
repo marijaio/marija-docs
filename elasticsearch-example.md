@@ -22,12 +22,12 @@ $ docker pull nl5887/marija-enterprise
 ## Installing ElasticSearch
 Run the following command:
 ```
-$ docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.4
+$ docker pull docker.elastic.co/elasticsearch/elasticsearch:5.6.1
 ```
 
 Now start ElasticSearch:
 ```
-$ docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.4
+$ docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:5.6.1
 ```
 > This creates and runs a temporary ElasticSearch database. The data stored in it will not be persistent and deleted when it is stopped.
 
