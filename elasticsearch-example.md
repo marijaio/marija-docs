@@ -16,7 +16,7 @@ Prerequisites:
 ## Installing Marija
 Run the following command:
 ```
-$ docker pull marija/marija
+$ docker pull nl5887/marija-enterprise
 ```
 
 ## Installing ElasticSearch
@@ -90,11 +90,12 @@ password="changeme"
 
 Start Marija with:
 ```
-$ docker run -d -p 8080:8080 -v $(pwd)/config.toml:/config/config.toml marija/marija
+$ docker run -d -p 8080:8080 -v $(pwd)/config.toml:/config/config.toml nl5887/marija-enterprise
 ```
 
-Visit Marija with your browser on [localhost:8080](http://localhost:8080). You
-should now be able to search movies!
+Visit Marija with your browser on [localhost:8080](http://localhost:8080).
+Because we're using the enterprise version, you will need to login. Use the
+username `admin` and the password `admin`. You should now be able to search movies!
 
 If anything went wrong, try looking at the logs of the Marija container. Run
 `docker ps` to find your container ID, and then run `docker logs CONTAINERID`.
