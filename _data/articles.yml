@@ -17,8 +17,11 @@
   - title: Adding datasources
     link: /adding-datasources.html
     description: Datasources are sources that Marija can search. Learn how to add several types of datasources.
+  - title: ElasticSearch example
+    link: /elasticsearch-example.html
+    description: Learn to set up both Marija and ElasticSearch with Docker and work with a sample dataset.
 - title: Case studies
   articles:
   - title: Hello Peppa
     link: /hello-peppa.html
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ipsum ac neque convallis consectetur.
+    description: Analysis of cyber attacks containing a payload with the string "Hello Peppa".

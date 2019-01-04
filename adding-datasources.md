@@ -98,3 +98,7 @@ your newly added datasources.
 
 If you need more help with the installation of Marija, check out the
 [installation guide](/installation.html).
+
+For an in-depth guide of how to setup both ElasticSearch and Marija and how to make
+your ElasticSearch instance searchable by Marija, check out the
+[ElasticSearch example](/elasticsearch-example.html).
