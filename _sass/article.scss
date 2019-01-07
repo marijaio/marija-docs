@@ -45,6 +45,10 @@
     @include h3();
   }
 
+  h4 {
+    @include h4();
+  }
+
   p {
     margin-bottom: 1em;
   }

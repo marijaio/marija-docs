@@ -27,3 +27,9 @@
     margin: 1.33em 0 .66em;
   }
 }
+
+@mixin h4() {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 1em 0 0;
+}
