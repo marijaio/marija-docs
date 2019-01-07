@@ -5,7 +5,7 @@ import sys
 from elasticsearch import helpers
 
 #Change if not using default credentials
-es = elasticsearch.Elasticsearch(http_auth=('elastic', 'changeme'))
+es = elasticsearch.Elasticsearch(http_auth=('elastic', 'changeme'), timeout=30)
 movies_file = "./data/ml-20m/movies.csv"
 ratings_file = "./data/ml-20m/ratings.csv"
 mapping_file = "movie_lens.json"
