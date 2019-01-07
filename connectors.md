@@ -39,7 +39,7 @@ Click on the `Settings` button to open up the settings for a connector.
 Different types of fields will give you different options.
 
 ### Text fields
-![Text connector](/assets/articles/search/text-connector.png)
+![Text connector](/assets/articles/connectors/text-connector.png)
 
 For connectors with text fields you have the option to select a similarity.
 Strings that are very similar, for example `crocodile` and `crocodil`, can be
@@ -50,12 +50,12 @@ You can also add a regular expression with a replace value. If you would enter
 would create a match between nodes with the name `new york` and `big apple`.
 
 ### Location fields
-![Location connector](/assets/articles/search/location-connector.png)
+![Location connector](/assets/articles/connectors/location-connector.png)
 
 For connectors with location fields you can select a maximum distance.
 
 ### IP fields
-![IP connector](/assets/articles/search/ip-connector.png)
+![IP connector](/assets/articles/connectors/ip-connector.png)
 
 For connectors with IP fields you have the option to select a subnet mask in
 which both IP addresses need to be.
