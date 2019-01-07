@@ -4,8 +4,7 @@ title: ElasticSearch example
 ---
 
 In this article we will:
-* Install Marija using Docker.
-* Install ElasticSearch using Docker.
+* Install Marija, ElasticSearch and Kibana using Docker Compose.
 * Populate ElasticSearch with sample data (movie recommendations).
 * Configure Marija to connect with ElasticSearch, using it as a datasource.
 
@@ -13,25 +12,75 @@ Prerequisites:
 * Docker. For more info on how to install see [docker.com](https://docs.docker.com/install/).
 * Python3.
 
-## Installing Marija
-Run the following command:
+## Running ElasticSearch, Marija and Kibana
+We will download and run the above three applications using Docker Compose.
+
+Create the file `docker-compose.yml`. This is the configuration file for
+Docker Compose, where we specify which services we will run. Paste the following
+contents into it:
 ```
-$ docker pull nl5887/marija-enterprise
+---
+version: '2'
+services:
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.6.1
+    volumes:
+      - /usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:5.6.1
+    links:
+      - elasticsearch
+    depends_on:
+      - elasticsearch
+    ports:
+      - 5601:5601
+
+  marija:
+    image: nl5887/marija-enterprise
+    links:
+      - elasticsearch
+    depends_on:
+      - elasticsearch
+    ports:
+      - 8080:8080
+    volumes:
+      - ./marija-config.toml:/config/config.toml
 ```
 
-## Installing ElasticSearch
-Run the following command:
+Next we will create the configuration file for Marija. Here we specify which
+ElasticSearch datasources will be searchable from Marija. Create the file
+`marija-config.toml` and paste the following contents into it:
 ```
-$ docker pull docker.elastic.co/elasticsearch/elasticsearch:5.6.1
+[datasource]
+
+[datasource.movie_lens_users]
+type="elasticsearch"
+url="http://elasticsearch:9200/movie_lens_users"
+username="elastic"
+password="changeme"
 ```
 
-Now start ElasticSearch:
+To start all containers run:
 ```
-$ docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:5.6.1
+docker-compose up
 ```
-> This creates and runs a temporary ElasticSearch database. The data stored in it will not be persistent and deleted when it is stopped.
 
-Verify that ElasticSearch is working by visiting [localhost:9200](http://localhost:9200) in your browser.
+Now all three applications should be up and running. Try them out in your browser:
+- Kibana: [localhost:5601](http://localhost:5601). Default login: **elastic** / **changeme**
+- ElasticSearch: [localhost:9200](http://localhost:9200) Default login: **elastic** / **changeme**
+- Marija: [localhost:8080](http://localhost:8080) Default login: **admin** / **admin**
+
+Note that Marija might be working, but it does not have any datasources.
+This is because we have not stored our sample data in ElasticSearch yet.
+
+> If you experience problems, it might be because Docker is configured by default
+> to limit its memory usage to 2 GB. These applications together will use more than
+> that. You can edit the memory limit in the Docker preferences pane, under `Advanced`.
+> Try setting it to 5GB.
 
 ## Populating ElasticSearch with movie recommendations
 
@@ -45,57 +94,33 @@ $ curl -O https://docs.marija.io/assets/articles/elasticsearch-example/download_
 
 Install the Python dependencies:
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Download the movie data:
 ```
-python3 download_data.py
+$ python3 download_data.py
 ```
 
 Store the data in your ElasticSearch instance:
 ```
-python3 index_users.py
+$ python3 index_users.py
 ```
 
 To see if it worked, go to
 [localhost:9200/movie_lens_users/_count](http://localhost:9200/movie_lens_users/_count).
 You should see a count of 138493.
 
-## Configuring Marija
+## Restarting Marija
 
-First we will need to find the IP address of ElasticSearch. Run `docker ps` to find
-the container ID of your ElasticSearch container. Copy the container ID and then
-run (while replacing below ID with your own container ID):
+Because we have added a new datasource, we will need to restart Marija.
+Do this with the following command:
 ```
-docker inspect a247ca20f6d1
-```
-
-You will find the IP address at `NetworkSettings` > `IPAddress`
-
-Create a new file and name it `config.toml`. This is the Marija configuration
-file. Paste the following into it:
-```
-[datasource]
-
-[datasource.movie_lens_users]
-type="elasticsearch"
-# Replace the IP address below with the IP you found with docker inspect
-url="http://172.17.0.3:9200/movie_lens_users"
-username="elastic"
-password="changeme"
+$ docker-compose restart marija
 ```
 
-## Trying it out!
+When the restart is complete, visit Marija in your browser again
+([localhost:8080](http://localhost:8080)), and refresh
+the page.
 
-Start Marija with:
-```
-$ docker run -d -p 8080:8080 -v $(pwd)/config.toml:/config/config.toml nl5887/marija-enterprise
-```
-
-Visit Marija with your browser on [localhost:8080](http://localhost:8080).
-Because we're using the enterprise version, you will need to login. Use the
-username `admin` and the password `admin`. You should now be able to search movies!
-
-If anything went wrong, try looking at the logs of the Marija container. Run
-`docker ps` to find your container ID, and then run `docker logs CONTAINERID`.
+Now you should be able to search the movie recommendations database!
