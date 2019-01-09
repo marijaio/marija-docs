@@ -20,7 +20,7 @@ layout: default
         </div>
 
         <footer class="articleFooter">
-            <a class="openIssue" href="https://github.com/marijaio/marija-docs/issues/new?title=Improvements to {{ page.title }}">Suggest improvements</a>
+            <a class="openIssue" href="https://github.com/marijaio/marija-docs/issues/new?title={{ 'Improvements to ' | append: page.title | uri_escape }}">Suggest improvements</a>
             <a class="editArticle" href="https://github.com/marijaio/marija-docs/edit/master{{ page.dir }}{{ page.path }}">Edit this page</a>
         </footer>
     </main>
