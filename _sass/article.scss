@@ -20,14 +20,6 @@
     @include h1();
     margin-bottom: 0 !important;
   }
-
-  .editArticle {
-    background: #eee;
-    color: black;
-    padding: 5px 15px;
-    border-radius: 20px;
-    text-decoration: none;
-  }
 }
 
 .articleContent {
@@ -131,4 +123,23 @@
     padding: 5px;
     color: black;
   }
+}
+
+.articleFooter {
+  margin-bottom: 2em;
+
+  @include respondTo(medium) {
+    display: flex;
+  }
+}
+
+.editArticle,
+.openIssue {
+  display: inline-block;
+  background: #eee;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 0 1em 1em 0;
 }

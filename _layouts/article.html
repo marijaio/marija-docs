@@ -13,12 +13,16 @@ layout: default
                 </p>
                 <h1 class="articleTitle">{{ page.title }}</h1>
             </div>
-            <a class="editArticle" href="https://github.com/marijaio/marija-docs/edit/master{{ page.dir }}{{ page.path }}">Improve this page</a>
         </header>
 
         <div class="articleContent">
             {{content}}
         </div>
+
+        <footer class="articleFooter">
+            <a class="openIssue" href="https://github.com/marijaio/marija-docs/issues/new?title=Improvements to {{ page.title }}">Suggest improvements</a>
+            <a class="editArticle" href="https://github.com/marijaio/marija-docs/edit/master{{ page.dir }}{{ page.path }}">Edit this page</a>
+        </footer>
     </main>
 
     <aside class="articleAside">
