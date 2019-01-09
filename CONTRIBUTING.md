@@ -3,11 +3,17 @@
 
 ``Marija`` community welcomes your contribution. To make the process as seamless as possible, we recommend you read this contribution guide.
 
-## Development Workflow
+## Workflow
 
-Start by forking the Marija Docs GitHub repository, make changes in a branch and then send a pull request. We encourage pull requests to discuss changes. Here are the steps in details:
+### Open an issue (optional)
+For larger changes, like adding a new article, it's recommended to first
+[open an issue](https://github.com/marijaio/marija-docs/issues/new)
+regarding the changes you are considering. This is useful because possibly
+someone else is already making similar changes.
 
 ### Setup your Marija Docs Github Repository
+Fork the Marija Docs GitHub repository, make changes in a branch and then send a pull request. We encourage pull requests to discuss changes. Here are the steps in details:
+
 Fork [Marija upstream](https://github.com/marijaio/marija-docs) source repository to your own personal repository. Copy the URL of your Marija Docs fork (you will need it for the `git clone` command below).
 
 ```sh
