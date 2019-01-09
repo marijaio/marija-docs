@@ -7,11 +7,11 @@
 
 Start by forking the Marija Docs GitHub repository, make changes in a branch and then send a pull request. We encourage pull requests to discuss changes. Here are the steps in details:
 
-### Setup your Marija Github Repository
+### Setup your Marija Docs Github Repository
 Fork [Marija upstream](https://github.com/marijaio/marija-docs) source repository to your own personal repository. Copy the URL of your Marija Docs fork (you will need it for the `git clone` command below).
 
 ```sh
-$ git clone <paste saved URL for personal forked marija repo>
+$ git clone <paste saved URL for personal forked marija docs repo>
 $ cd marija
 ```
 
@@ -31,9 +31,9 @@ Before making changes, make sure you create a separate branch for these changes:
 $ git checkout -b my-new-article
 ```
 
-### Test Marija server changes
+### Review your changes locally
 After you make your changes, try them locally on your computer by running
-`jekyll serve`. Learn on how to use jekyll on [jekyllrb.com](https://jekyllrb.com).
+`jekyll serve`. Learn how to use jekyll on [jekyllrb.com](https://jekyllrb.com).
 
 ### Commit changes
 After verification, commit your changes. This is a [great post](https://chris.beams.io/posts/git-commit/) on how to write useful commit messages.
